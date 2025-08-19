@@ -4,8 +4,9 @@
   "description": "",
   "main": "UNIKYOYU.js",
   "scripts": {
-    "start": "http-server -c-1 -o UNIKYOYU.html",
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "start": "http-server -c-1 -o UNIKYOYU.html",
+  "build": "echo 'No build step necessary for static site'",
+  "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
