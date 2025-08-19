@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Unikyoyu — Share • Sell • Support</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="UNIKYOYU.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav class="nav">
+      <div class="nav-inner">
+        <a class="brand" href="#home" aria-label="Unikyoyu home">
+          <img class="brand-logo" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/362/original/download_%284%29.jpg?1755432825" alt="Unikyoyu logo" width="44" height="44" />
+          <span class="brand-title">Unikyoyu</span>
+        </a>
+        <div class="nav-links">
+          <a class="chip" href="#home">Home</a>
+          <a class="chip" href="#browse">Browse</a>
+          <a class="chip" data-requires-verify href="#sell">Sell / Donate</a>
+          <a class="chip" href="#safety">Safety</a>
+          <a class="chip" href="#about">About</a>
+          <a class="chip" href="#contact">Contact</a>
+          <a class="chip" href="#login">Login</a>
+          <a class="chip" data-cta data-requires-verify href="#dashboard">Dashboard</a>
+        </div>
+      </div>
+    </nav>
+    <!-- Hero: minimal words, big imagery -->
+    <header id="home" class="hero">
+      <div class="hero-inner">
+        <div class="hero-card" style="animation-delay: 0.05s">
+          <h1>Share | Connect | Thrive</h1>
+          <p>Student-only marketplace. Lower cost. Lower waste. Higher community.</p>
+          <div class="cta-row">
+            <button class="btn btn-primary" data-requires-verify onclick="navigateHash('#sell')">Post Item</button>
+            <a class="btn btn-ghost" href="#browse">Browse</a>
+          </div>
+          <p id="hello" class="lock" style="margin-top: 12px">Public tabs are open. Full access after university email verification.</p>
+        </div>
+        <div class="hero-card" style="animation-delay: 0.15s">
+          <img alt="Students exchanging books" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/354/original/hands.jpg?1755427750" />
+        </div>
+      </div>
+    </header>
+    <!-- Browse grid (image heavy, short labels) -->
+    <section id="browse" class="section">
+      <h2>Pick a category</h2>
+      <div class="grid">
+        <a class="tile" href="#listings"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/357/original/Green_Homescreen_Wallpaper_with_Floral.jpg?1755429023" alt="Books" /><span class="label">Books & Notes</span></a>
+        <a class="tile" href="#listings"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/359/original/Illustration_vector_graphic_cartoon_character_of_checklist.jpg?1755430241" alt="Question Papers" /><span class="label">PYQs</span></a>
+        <a class="tile" href="#listings"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/360/original/Premium_Vector___Hostel_for_young_people_concept.jpg?1755430459" alt="Hostel" /><span class="label">Hostel</span></a>
+        <a class="tile" href="#listings"><img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/363/original/Sports_Collage_Abstract_Art_Print.jpg?1755433685" alt="Sports" /><span class="label">Sports</span></a>
+      </div>
+    </section>
+    <!-- Listings teaser (minimal copy) -->
+    <section id="listings" class="section">
+      <h2>Fresh finds</h2>
+      <div class="grid">
+        <article class="card">
+          <img alt="Physics book" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/364/original/cscscs.jpg?1755433882" />
+          <div class="card-body">
+            <div class="card-price">₹250</div>
+            <div class="card-title">HC Verma Vol 1</div>
+          </div>
+        </article>
+        <article class="card">
+          <img alt="Chair" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/365/original/download_%285%29.jpg?1755434164" />
+          <div class="card-body">
+            <div class="card-price">₹600</div>
+            <div class="card-title">Study Chair</div>
+          </div>
+        </article>
+        <article class="card">
+          <img alt="Cricket" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/366/original/Morrant_Super_Ultralite_Junior___Youth_Cricket_Batting_Pads_-_Small_Junior___White.jpg?1755434311" />
+          <div class="card-body">
+            <div class="card-price">Free</div>
+            <div class="card-title">Cricket Pads</div>
+          </div>
+        </article>
+        <article class="card">
+          <img alt="Calculator" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/367/original/sg-11134201-22110-jaet6xdimgkv63.jpg?1755434479" />
+          <div class="card-body">
+            <div class="card-price">₹450</div>
+            <div class="card-title">Casio FX-991EX</div>
+          </div>
+        </article>
+      </div>
+    </section>
+    <!-- Values strip -->
+    <section class="section info">
+      <div class="tileInfo">
+        <strong>Verified students</strong>
+        <p class="muted">Campus email keeps it safe.</p>
+      </div>
+      <div class="tileInfo">
+        <strong>Reuse & save</strong>
+        <p class="muted">Eco + budget friendly.</p>
+      </div>
+      <div class="tileInfo">
+        <strong>Donate</strong>
+        <p class="muted">Pass it forward.</p>
+      </div>
+    </section>
+    <!-- Safety (public) -->
+    <section id="safety" class="section">
+      <h2>Safety</h2>
+      <ul class="muted">
+        <li>Meet on campus / public spots.</li>
+        <li>Check item before paying.</li>
+        <li>Never share OTPs. Report issues.</li>
+      </ul>
+    </section>
+    <!-- About (public) -->
+    <section id="about" class="section">
+      <h2>About</h2>
+      <p class="muted">Unikyoyu is a student-only marketplace. Short, simple, visual. Built for everyday campus life.</p>
+    </section>
+    <!-- Contact (public) -->
+    <section id="contact" class="section">
+      <h2>Contact</h2>
+      <p class="muted">hello@unikyoyu@gmail.com</p>
+    </section>
+    <!-- Disclaimer -->
+    <section id="disclaimer" class="section disclaimer">
+      <h2>Disclaimer</h2>
+      <ul class="muted">
+        <li>‼️ Users can only list original, physical study materials.</li>
+        <li>‼️ The sale or exchange of PDFs, scanned notes, software licenses, or course logins is strictly prohibited. Unikyoyu is not responsible for any transactions or interactions between users.</li>
+        <li>‼️ The seller is responsible for ensuring they have the legal right to sell the items they list.</li>
+      </ul>
+    </section>
+    <footer>
+      <div class="foot">
+        <div>
+          <div class="brand" style="margin-bottom: 8px">
+            <img class="brand-logo" src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/172/362/original/download_%284%29.jpg?1755432825" alt="Logo" width="44" height="44" />
+            <span class="brand-title">Unikyoyu</span>
+          </div>
+          <p class="credit">© <span id="year"></span> Unikyoyu — Share|Connect|Thrive</p>
+        </div>
+        <div>
+          <strong>Public</strong>
+          <ul class="credit">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#browse">Browse</a></li>
+            <li><a href="#safety">Safety</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <strong>Account</strong>
+          <ul class="credit">
+            <li><a href="#sell" data-requires-verify>Sell / Donate</a></li>
+            <li><a href="#dashboard" data-requires-verify>Dashboard</a></li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- Onboarding modal (name / university / country / city) -->
+    <dialog id="introModal">
+      <form class="modal" method="dialog" id="introForm">
+        <h3>Welcome 👋</h3>
+        <p class="muted">Personalize your campus feed.</p>
+        <div class="row" style="margin: 12px 0 8px">
+          <div class="field">
+            <label for="name">Name</label><input id="name" name="name" required placeholder="e.g., Asha" />
+          </div>
+          <div class="field">
+            <label for="university">University</label><input id="university" name="university" required placeholder="e.g., NIT Trichy" />
+          </div>
+          <div class="field">
+            <label for="country">Country</label><input id="country" name="country" required placeholder="e.g., India" />
+          </div>
+          <div class="field">
+            <label for="city">City</label><input id="city" name="city" required placeholder="e.g., Jaipur" />
+          </div>
+        </div>
+        <menu>
+          <button class="btn" value="cancel">Not now</button>
+          <button class="btn btn-primary" value="ok">Continue</button>
+        </menu>
+      </form>
+    </dialog>
+    <!-- Verification modal (university email) with Cancel option -->
+    <dialog id="verifyModal">
+      <form class="modal" method="dialog" id="verifyForm">
+        <h3>University Email</h3>
+        <p class="muted">Unlock full access. Student-only.</p>
+        <div class="field" style="margin: 12px 0 8px">
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" required placeholder="name@college.ac.in" />
+          <small class="muted">Examples: <code>@*.ac.in</code>, <code>@*.edu</code>, <code>@*.edu.in</code></small>
+        </div>
+        <menu>
+          <button class="btn" value="cancel" id="cancelVerify">Cancel</button>
+          <button class="btn btn-primary" value="ok">Verify</button>
+        </menu>
+      </form>
+    </dialog>
+    <script src="UNIKYOYU.js"></script>
+  </body>
+</html>
